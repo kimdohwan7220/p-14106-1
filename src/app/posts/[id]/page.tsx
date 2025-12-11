@@ -4,8 +4,6 @@ import { apiFetch } from "@/lib/backend/client";
 import type { PostWithContentDto } from "@/type/post";
 import { use, useEffect, useState } from "react";
 
-const NEXT_PUBLIC_API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
-
 export default function Page({ params }: { params: Promise<{ id: number }> }) {
   const { id } = use(params);
 
